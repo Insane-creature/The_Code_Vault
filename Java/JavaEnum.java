@@ -1,5 +1,3 @@
-package Java;
-
 enum Day {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 }
@@ -7,7 +5,12 @@ enum Day {
 public class JavaEnum {
     public static void main(String[] args) {
         // Accessing enum values
+
+        System.out.println(Day.FRIDAY);
+        System.out.println(Day.valueOf("MONDAY"));
+
         Day today = Day.MONDAY;
+
         
         // Using enum in a switch statement
         switch (today) {
@@ -25,5 +28,7 @@ public class JavaEnum {
                 System.out.println("Midweek!");
                 break;
         }
+
+        
     }
 }
