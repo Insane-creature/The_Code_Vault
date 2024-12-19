@@ -1,6 +1,6 @@
 package Java;
 
-public class Main {
+public class JavaRecord {
     public static void main(String[] args) {
         Person person = new Person("Anshika", 23);
         System.out.println(person.name());
