@@ -17,7 +17,6 @@ public class lcm {
     }
 }
 
-
 // GCD - Greatest common divisior
 
 // a x b == LCM(a, b) x GCD(a, b)
