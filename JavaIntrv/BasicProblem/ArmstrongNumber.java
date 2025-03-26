@@ -9,7 +9,7 @@ public class ArmstrongNumber {
         }
         return  r * halfpower * halfpower;
 
-    }   
+    }
 
     static int order(int x)
     {
@@ -21,7 +21,7 @@ public class ArmstrongNumber {
         return n;
     }
     public static void main(String[] args) {
-        int x = 1;
+        int x = 153;
         int sum = 0;
         int n = order(x);
         int temp = x;
@@ -32,8 +32,6 @@ public class ArmstrongNumber {
         }
         if (sum == x){System.out.println("Is Armstrong number");}
         else System.out.println("Not an Armstrong number");
-
-
 
         // System.out.println(sum);
 

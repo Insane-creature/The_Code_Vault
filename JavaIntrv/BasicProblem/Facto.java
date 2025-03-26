@@ -12,6 +12,5 @@ public class Facto {
         int n = 5;
         System.out.println(factorial(n));
         // System.out.println(5);
-
     }
 }
