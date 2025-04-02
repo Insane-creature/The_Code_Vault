@@ -1,5 +1,4 @@
 package Java;
-
 class A{
     public A() {
         super();
@@ -17,13 +16,13 @@ class B extends A{
         System.out.println("In B");
     }
     public B(int n) {
-        super();
+        this();
         System.out.println("In B int");
     }
 }
 
-public class MultiInheritance{
+public class SuperAndThis{
     public static void main(String[] args) {
-        B obj = new B();
+        B obj = new B(5);
     }
 }
