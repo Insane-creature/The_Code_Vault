@@ -14,7 +14,7 @@ class BankAccount{
 
 }
 
-public class BankAccount_encap {
+public class Encap_BankAccount {
    public static void main(String[] args) {
        BankAccount obj = new BankAccount();
        System.out.println("Employee name: "+obj.getName()+" "+"and the account number is: "+obj.getAccountNumber());
