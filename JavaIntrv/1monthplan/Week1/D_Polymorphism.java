@@ -19,7 +19,7 @@ class secondclass extends firstClass{
     }
 }
 
-public class Polymorphism {
+public class D_Polymorphism {
     public static void main(String[] args) {
         firstClass obj = new firstClass();
         int n1 = 3, n2 = 4, n3 = 6;

@@ -14,9 +14,9 @@ class childClass extends Caro{
     
 }
 
-public class Abstraction_Shape {
+public class B_AbstractionShape {
     public static void main(String[] args) {
-        Caro obj = new Caro();
+        childClass obj = new childClass();
         obj.drive();
         obj.playMusic();
     }

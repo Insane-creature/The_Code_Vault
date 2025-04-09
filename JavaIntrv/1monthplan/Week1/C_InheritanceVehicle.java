@@ -38,7 +38,7 @@ class Bike extends Vehicle{
     }
 }
 
-public class Inheritance_Vehicle {
+public class C_InheritanceVehicle {
     public static void main(String[] args) {
         Car myCar = new Car("Honda City", 180, 4);
         Bike myBike = new Bike("Yamaha MT-15", 140, true);
