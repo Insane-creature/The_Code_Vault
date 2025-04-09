@@ -4,6 +4,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;      // For framing first page
 import javax.swing.JLabel;
+import src.employeeManagementSystem.Login;
 
 public class splash extends JFrame{
     
@@ -25,6 +26,7 @@ public class splash extends JFrame{
         try {
             Thread.sleep(5000);
             setVisible(false);
+            new Login();
         } catch (Exception e) {
             e.printStackTrace();
         }
