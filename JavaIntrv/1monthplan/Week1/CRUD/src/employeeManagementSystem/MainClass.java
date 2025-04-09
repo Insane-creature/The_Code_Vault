@@ -1,11 +1,23 @@
 package src.employeeManagementSystem;
 
-import javax.swing.JFrame;
+import java.awt.Image;
+import javax.swing.*;
 
 public class MainClass extends JFrame {
 
     public MainClass(){
-        setSize(500, 500);
+
+
+        ImageIcon i1 = new ImageIcon (ClassLoader.getSystemResource("src/icons/home.jpg"));
+        Image i2 = i1.getImage().getScaledInstance( 1120, 630, Image.SCALE_DEFAULT);
+        ImageIcon i3 = new ImageIcon(i2);
+        JLabel img = new JLabel(i3);
+        img.setBounds(0,  0,  1120, 630);
+        add(img);
+
+        setSize(1120, 630);
+        setLocation(250, 100);
+        setLayout(null);
         setVisible(true);
     }
     public static void main(String[] args) {

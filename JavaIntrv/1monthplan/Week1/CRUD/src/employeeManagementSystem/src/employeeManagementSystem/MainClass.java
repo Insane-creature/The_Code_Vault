@@ -6,9 +6,9 @@ package src.employeeManagementSystem;
  */
 
 
-public class Login {
+public class MainClass {
 
-    public Login() {
+    public MainClass() {
     }
 
 }
