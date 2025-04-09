@@ -3,6 +3,7 @@ package src.employeeManagementSystem;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import javax.swing.*;
   
 
@@ -65,9 +66,29 @@ public class Login extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == login){
+            try {
+                String username = tusername.getText();
+                String password = tPassword.getText();
+
+                conn conn = new conn();
+                String query = "select * from login where usermame = '" +username + "' and password = '" + password + "'";
+                ResultSet resultset = conn.statement.executeQuery(query);
+                if (resultset.next()){
+                    setVisible(false);
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "Invalid username or password");
+                    
+                }
+
+
+            } catch (Exception E) {
+                E.printStackTrace();
+            }
 
         }
         else if(e.getSource() == back){
