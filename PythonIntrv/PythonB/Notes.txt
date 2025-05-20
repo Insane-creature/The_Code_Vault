@@ -1,0 +1,46 @@
+Q. Why can’t a list be used as a dictionary key?
+-> A list cannot be used as a dictionary key in Python because:
+
+Dictionary keys must be immutable and hashable
+•	A dictionary key must have a fixed hash value during its lifetime.
+•	Lists are mutable — you can change their contents after creation.
+•	This mutability means their hash value would change if their contents change, breaking the dictionary’s internal structure.
+
+Q. What makes an object hashable in Python?
+
+Q. Deep vs. Shallow Copy:
+
+Q. Write a generator function that yields even numbers up to a given number n.
+
+Q. How does using a generator improve memory efficiency in this case?
+
+Q. What is the difference between an iterable and an iterator in Python?
+
+Q. How does the __iter__() and __next__() methods facilitate iteration?
+
+Q. Designing an API Endpoint:
+-> Design a RESTful API endpoint for creating a new user.
+-> What HTTP method would you use, and what status codes would you return for success and various error cases?
+
+Q. Microservices Communication:
+-> How do microservices communicate with each other?
+-> Discuss synchronous vs. asynchronous communication and the tools or protocols commonly used.
+
+# Cloud Platforms & Deployment
+
+Q. Deploying a Python Application:
+-> Outline the steps to deploy a Python Flask application to AWS Elastic Beanstalk.
+-> What are the advantages of using Elastic Beanstalk for deployment?
+
+Q. Environment Variables Management:
+-> How do you manage sensitive information like API keys or database credentials in a cloud environment?
+-> What practices ensure security and flexibility?
+
+🧪 Testing & Debugging
+Q. Unit Testing with unittest:
+-> Write a unit test for a function that adds two numbers.
+-> How do you structure your tests, and what naming conventions do you follow?
+
+Q. Debugging Techniques:
+-> What tools or methods do you use to debug a Python application?
+-> How do you handle and log exceptions in a production environment?
